@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: ;
+}
+
+#header {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+    grid-template-areas:
+        logo icon_list
+        logo introduce;
+}
+
+#logo_header {
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#icon_list {
+    grid-area: icon_list;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icon_list_item {
+    display: flex;
+    flex-direction: column;
+}
+
+#introduce {
+    grid-area: introduce;
+}
